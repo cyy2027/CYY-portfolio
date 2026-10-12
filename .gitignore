@@ -1,0 +1,58 @@
+# ========= 编译产物 Keil MDK =========
+*.o
+*.crf
+*.d
+*.axf
+*.hex
+*.bin
+*.elf
+*.map
+*.lnp
+*.htm
+*.sct
+*.lst
+*.uvguix.*
+JLinkLog.txt
+JLinkSettings.ini
+build/
+Debug/
+Release/
+# 本项目keil工程输出目录
+keil_project/MDK-ARM/Objects/
+keil_project/MDK-ARM/Listings/
+
+# ========== Arduino / ESP32 编译临时文件 ==========
+*.eeprom
+*.sym
+*.build
+*.cache
+build-*/
+.cache/
+pdebuild-*/
+
+# ========= IDE 临时文件 =========
+.idea/
+.vscode/
+*.bak
+*.log
+*.tmp
+*.suo
+*.user
+*.sublime-project
+*.sublime-workspace
+
+# ========= 压缩包无关文件 =========
+*.rar
+*.zip
+*.7z
+*.tar.gz
+
+# ========= Windows / Mac系统垃圾 =========
+Thumbs.db
+dir_list.txt
+.DS_Store
+desktop.ini
+
+# ========== 项目本地密钥（防止不小心提交阿里云三元组） ==========
+# 如果单独外置密钥文件可开启下面一行
+# local_config.h
