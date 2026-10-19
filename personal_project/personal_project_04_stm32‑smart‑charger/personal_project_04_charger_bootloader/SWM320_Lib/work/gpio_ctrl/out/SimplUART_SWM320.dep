@@ -1,574 +1,0 @@
-Dependencies for Project 'SimplUART', Target 'SWM320': (DO NOT MODIFY !)
-CompilerVersion: 6160000::V6.16::ARMCLANG
-F (.\app\main.c)(0x6825D3B2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/main.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_adc.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_exti.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_gpio.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_i2c.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_pwm.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_timr.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_uart.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_wdt.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_dma.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_flash.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_port.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_spi.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_can.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_crc.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_lcd.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x603507D0)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_rtc.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/swm320_sdio.o -MD)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.c)(0x681E1FC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Oz -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/CoreSupport -I ../../SWM320_StdPeriph_Driver/CSL/CMSIS/DeviceSupport -I ../../SWM320_StdPeriph_Driver/CSL/SWM320_StdPeriph_Driver-IC:/Users/book/AppData/Local/Arm/Packs/Synwit/SWM32_DFP/2.0.4/CSL/SWM320/CMSIS/DeviceSupport-D__UVISION_VERSION="536"-o ./out/system_swm320.o -MD)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\SWM320.h)(0x681E1FC8)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cm4.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\CoreSupport\core_cmSimd.h)(0x681E1FC2)
-I (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\system_SWM320.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_port.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_gpio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_exti.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_timr.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_uart.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_spi.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_i2c.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_pwm.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_adc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_dma.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_lcd.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_can.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdio.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_flash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_norflash.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sdram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_sram.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_crc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_rtc.h)(0x681E1FC8)
-I (..\..\SWM320_StdPeriph_Driver\CSL\SWM320_StdPeriph_Driver\SWM320_wdt.h)(0x681E1FC8)
-F (..\..\SWM320_StdPeriph_Driver\CSL\CMSIS\DeviceSupport\startup\arm\startup_SWM320.s)(0x681E1FC8)(--cpu Cortex-M4 --fpu=SoftVFP --li -g --pd "__MICROLIB SETA 1"-IC:\Users\book\AppData\Local\Arm\Packs\Synwit\SWM32_DFP\2.0.4\CSL\SWM320\CMSIS\DeviceSupport--pd "__UVISION_VERSION SETA 536"--list .\out\startup_swm320.lst--xref -o .\out\startup_swm320.o--depend .\out\startup_swm320.d)
