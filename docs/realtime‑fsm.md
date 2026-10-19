@@ -305,13 +305,5 @@ void fsm_task(void *arg)
 - 《嵌入式C语言状态机编程》21IC工业控制实践
 - SimpleFSM有限状态机开源实践
 
-
-### 使用说明
-1. 复制全部内容保存为 `docs/realtime‑fsm.md`
-2. 如果后续绘制状态流程图，可以插入图片：
-```html
-<img src="../images/fsm_flow.png" alt="Tick驱动非阻塞状态机流程图" width="700"/>
-```
-
 ## 📌返回导航
 [⬅ 返回作品集首页](../README.md)

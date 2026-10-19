@@ -2,6 +2,7 @@
 # 量产固件的OTA方案：双分区+CRC+断电回滚
 
 > 📄 文档路径：`docs/firmware‑mass‑produce.md`
+
 > ✍️ 个人实践总结：面向MCU量产固件可靠性设计，包含Bootloader、A/B双分区OTA、完整性校验、看门狗故障恢复、国产MCU迁移适配，记录实际踩坑与解决方案。
 
 ## 概述
