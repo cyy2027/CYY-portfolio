@@ -3,14 +3,14 @@
 > ⚠️全部资料已脱敏，**无企业涉密源码**，仅保留项目方案、流程图、开发总结文档。
 
 ## 📂项目列表
-### 1. 电源时序器国产化替代 MH2030A ⭐⭐⭐
+### 1. 电源时序器国产化替代 MH2030A 🔴
 [internship_project_01‑power‑sequencer](./GAOXINXING/internship_project_01-power-sequencer)
 🏷 `RISC‑V` `非阻塞FSM` `Modbus‑RTU` `Flash掉电保存`
 - ✅已完成：MH2030A国产时序芯片驱动开发，实现对进口电源时序器件国产化替代
 - ✅已完成：八路电源通道时序上电/逆序下电、电压监控、故障检测逻辑
 - ✅已完成：ADC按键、段码屏、功率计量、看门狗、Flash参数保存；整机联调测试，交付可用固件
 
-### 2. 数字调音台‑反馈抑制器 BP2668Ax RISC‑V ⭐⭐⭐
+### 2. 数字调音台‑反馈抑制器 BP2668Ax RISC‑V 🔴
 [internship_project_02‑digital‑audio‑mixer](./GAOXINXING/internship_project_02-digital-audio-mixer)
 🏷 `RISC‑V DSP` `I2S音频` `COBS‑CRC` `串口协议`
 - ✅已完成：音频DSP底层Bring‑up，SDK Demo调试，熟悉I2S音频数据流与音频路由API
@@ -18,7 +18,7 @@
 - ✅已完成：定位UART0被I2S抢占无法打印问题，搭建JTAG/GPIO替代调试方案，整理烧录编译踩坑笔记与开发Checklist
 - ⏳待硬件底板到位：FBX陷波、移频反馈抑制声学闭环实物验证
 
-### 3. 桌面USB声卡 BP2668Ax ⭐⭐⭐
+### 3. 桌面USB声卡 BP2668Ax 🟡
 [internship_project_03‑usb‑audio‑interface](./GAOXINXING/internship_project_03-usb-audio-interface)
 🏷 `音频混音` `状态管理` `增益渐变消爆音` `空桩分层开发`
 - ✅已完成：输出完整落地方案文档；硬件未到货前提下完成全部上层业务软件框架

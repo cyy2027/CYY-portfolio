@@ -1,0 +1,22 @@
+# Keil
+*.uvgui*
+*.axf
+*.hex
+*.bin
+*.elf
+*.o
+*.d
+*.crf
+*.lst
+*.sct
+Debug/
+Release/
+
+# ESPIDF
+build/
+sdkconfig
+sdkconfig.old
+*.log
+
+# VSCode
+.vscode/
