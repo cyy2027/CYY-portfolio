@@ -5,8 +5,8 @@
 全部内容均来自本人项目开发过程中的踩坑沉淀。
 
 🛠️ 完整实物工程、可编译源码，请跳转查看：
-- [`personal_project/`](../personal_project/) 个人实战项目
-- [`internship/`](../internship/) 实习脱敏工程
+- [`personal_project/`](../../personal_project/) 个人实战项目
+- [`internship/`](../../internship/) 实习脱敏工程
 
 ## 📋 笔记目录
 1. [嵌入式C语言开发要点与易错点](./c_basic_embedded.md)

@@ -36,22 +36,22 @@
 7. [《FreeRTOS工程踩坑集：栈溢出、优先级反转、临界区》](./freertos-trap-notes.md) 🔴
 > 任务栈评估、栈溢出检测；互斥锁与信号量区分；优先级反转；临界区边界；RTOS API使用误区
 
-8. [《Cortex‑M HardFault故障定位与调试手段》](./cortex‑m‑hardfault‑debug.md) 🔴
+8. [《Cortex‑M HardFault故障定位与调试手段》](./cortex-m-hardfault-debug.md) 🔴
 > HardFault常见诱因；J‑Link寄存器回溯、map文件分析；栈转储；生产环境故障保存方案
 
-9. [《RK3568边缘网关：Socket通信、断线重连、本地缓存设计》](./linux‑edge‑socket‑cache.md) 🔴
+9. [《RK3568边缘网关：Socket通信、断线重连、本地缓存设计》](./linux-edge-socket-cache.md) 🔴
 > Linux‑MCU跨芯片TCP通信；粘包半包；断线重连策略；SQLite数据缓存，端云协同架构权衡
 
-10. [《MQTT客户端实战：断连重连、遗嘱消息、QoS等级选型》](./mqtt‑practice‑note.md) 🟡
+10. [《MQTT客户端实战：断连重连、遗嘱消息、QoS等级选型》](./mqtt-practice-note.md) 🟡
 > MQTT QoS工程取舍、遗嘱消息；网络抖动场景；cJSON解析云端报文踩坑
 
-11. [《ADC采集工程实践：偏移校准、滤波、强电噪声抑制》](./adc‑engineering‑practice.md) 🟡
+11. [《ADC采集工程实践：偏移校准、滤波、强电噪声抑制》](./adc-engineering-practice.md) 🟡
 > ADC增益偏移校准；数字滤波；强电环境噪声；DMA‑ADC多路采集策略
 
-12. [《PID控制工程实战：温控/电机PID调参、超调抑制、前馈》](./pid‑engineering‑tuning.md) 🔴
+12. [《PID控制工程实战：温控/电机PID调参、超调抑制、前馈》](./pid-engineering-tuning.md) 🔴
 > 增量式PID、串级PID；积分饱和抑制；大惯性系统调参；电机带载扰动处理，调参流程总结
 
-13. [《CAN总线嵌入式开发：过滤器、错误状态、总线离线恢复》](./can‑bus‑practice.md) 🟡
+13. [《CAN总线嵌入式开发：过滤器、错误状态、总线离线恢复》](./can-bus-practice.md) 🟡
 > CAN过滤器配置；发送缓冲区满；错误计数；总线干扰、短路自动恢复，多节点组网踩坑
 
 ### ✨拓展学习笔记：[docs/tech‑notes](./tech‑notes/README.md)
