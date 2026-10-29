@@ -57,3 +57,7 @@ Flash划分Bootloader区、备份固件区、APP运行区；新固件写入备�
 - 系统架构框图：arch.png
 - BMS采集波形截图：bms_wave.png
 - 实物照片：hardware.jpg
+
+## 📌返回导航
+
+[⬅ 返回作品集首页](../../README.md)

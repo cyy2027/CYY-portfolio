@@ -45,6 +45,6 @@ STM32F103、FreeRTOS、IR2104S H桥驱动、霍尔正交编码器、增量式PID
 - 实物测试照片：hardware.jpg
 - VOFA+PID调速波形截图：pid_wave.png
 
-##  返回首页
-[ 返回作品集首页](../../README.md)
+## 📌返回导航
 
+[⬅ 返回作品集首页](../../README.md)

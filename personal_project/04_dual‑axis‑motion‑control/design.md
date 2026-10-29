@@ -91,6 +91,6 @@ $$\Delta u(k)=K_p\left[\Delta e(k)+K_i \cdot e(k)+K_d(\Delta e(k)-\Delta e(k-1))
 2. 增加回零寻原点逻辑；
 3. 支持轨迹插补算法。
 
+## 📌返回导航
 
-##  返回首页
-[ 返回作品集首页](../../README.md)
+[⬅ 返回作品集首页](../../README.md)
