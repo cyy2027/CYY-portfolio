@@ -5,7 +5,7 @@
 > 2 段实习（含 1 个量产交付项目）· 9 套完整实战系统 · 20 篇专题技术文档
 > 覆盖：底层固件与 BSP 驱动 · 工业控制与边缘计算 · 机器人 / 飞控 · 音视频终端 · 医疗仪器
 
-📮 [1051173244@qq.com](mailto:1051173244@qq.com)　🐙 [github.com/cyy2027](https://github.com/cyy2027)　📄 [在线版作品集（飞书，排版更精美）](https://p3-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/pc/super_tool/3b09bc56cfa24c99ad621f10bb514f7e.html?lk3s=8e244e95&rcl=20261106230041082128A8B8BA412E1300&rrcfp=f512b60b&x-expires=1795273296&x-signature=dPK0icz23Ui18jg5jo2VeMnGbRE%3D&use_xbridge3=true&loader_name=forest&need_sec_link=1&sec_link_scene=im&theme=dark)
+📄 [在线版作品集（飞书，排版更精美）](https://p3-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/pc/super_tool/3b09bc56cfa24c99ad621f10bb514f7e.html?lk3s=8e244e95&rcl=20261106230041082128A8B8BA412E1300&rrcfp=f512b60b&x-expires=1795273296&x-signature=dPK0icz23Ui18jg5jo2VeMnGbRE%3D&use_xbridge3=true&loader_name=forest&need_sec_link=1&sec_link_scene=im&theme=dark)
 
 > 💡 **阅读方式**：所有项目统一结构 —— `README.md`（简介与亮点）、`design.md`（软硬件详细设计）、`docs/`（实物图、调试记录、复盘）、`hardware/`（原理图 / PCB / BOM）、`firmware/`（源码）。建议 clone 到本地用 VS Code + Markdown 预览阅读。
 
