@@ -29,7 +29,7 @@
 ## 🔨编译运行
 IDE环境：Arduino‑IDE
 > ⚠️本仓库**不包含IDE、编译器、第三方库源码**，请自行安装Arduino IDE以及ESP32开发板支持包。
-> 🛠️完整部署复现步骤参考：[docs/deploy_guide.md](./docs/deploy_guide.md)
+> 🛠️ 完整部署复现步骤：**待补** —— `docs/deploy_guide.md` 尚未整理（`docs/` 目录当前为空）。
 
 1. 安装ESP32开发板支持包，安装上面全部依赖第三方库
 2. 修改WiFi 2.4G账号密码，填入阿里云`ProductKey / DeviceName / DeviceSecret`

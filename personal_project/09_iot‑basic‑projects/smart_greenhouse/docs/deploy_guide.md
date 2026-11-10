@@ -1,6 +1,6 @@
 # deploy_guide.md（ESP32智能温室大棚‑部署复现指南）
 > 文件路径：`personal_project_03_esp32‑smart‑greenhouse/doc/deploy_guide.md`
-> ⚠️ 本文档用于**项目复现**，面向拿到源码想要跑通工程的使用者；项目技术设计请看 [`../design.md`](./design.md)
+> ⚠️ 本文档用于**项目复现**，面向拿到源码想要跑通工程的使用者；项目技术设计请看 [`../design.md`](../design.md)
 
 # ESP32智能温室大棚 部署复现指南
 ## 硬件环境准备

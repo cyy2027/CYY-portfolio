@@ -38,7 +38,7 @@ personal_project_01_foc-bldc-moto
 
 ## 📄文档入口
 - [完整系统设计文档](./design.md)
-- [硬件清单与电路说明](./doc/hardware.md)
+- [硬件清单与电路说明](./docs/hardware.md)
 
 ---
 

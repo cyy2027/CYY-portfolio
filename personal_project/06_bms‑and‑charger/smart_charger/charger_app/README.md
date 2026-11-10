@@ -96,7 +96,7 @@ personal_project_04_charger_app/
 4. PCB布局时，功率继电器电路与信号电路做电源隔离，降低射频、ADC采样干扰。
 
 ## 🔮 后续迭代预研与技术储备方向（尚未落地实现）
-- > 🧪 [SWM320充电桩](../personal_project_04_charger_bootloader) 
+- > 🧪 [SWM320充电桩](../charger_bootloader) 
 
 ---
 
