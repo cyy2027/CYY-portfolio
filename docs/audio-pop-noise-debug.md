@@ -87,4 +87,4 @@ void dac_ramp_up(uint16_t start, uint16_t end, uint16_t step_ms)
 - 《音频功率放大器POP噪声抑制技术》
 
 📌返回导航
-[⬅ 返回作品集首页](../../README.md)
+[⬅ 返回作品集首页](../README.md)

@@ -16,13 +16,19 @@
 - ✅ 已完成：分层架构、四个核心风险拆解、四阶段验收指标、选型权衡与否决理由
 - ⬜ 未开始：硬件采购、BSP 适配、RKNN 工具链实操、控制代码
 
-1. [HyperDog 四足机器人主控固件](./01_hyperdog-quadruped) 👑
+1. [赛博猫狗：四足双平台（MCU 单机 + ROS 2 分层）](./01_quadruped_robotics) 👑
 > 🏷 `Cortex‑M` `FreeRTOS` `SPI` `UART` `IMU` `CAN` `Trot步态` `五次多项式轨迹` `姿态互补滤波` `分级故障安全`
-> 文档类型：系统架构设计 + 专题技术文档 + Debug实录，附核心代码、原理图
-- ✅ 对角Trot小跑步态调度，五次多项式足端轨迹，落地冲击小
-- ✅ ICM20602 IMU姿态解算，动态滤波抑制电机振动噪声
-- ✅ CAN分布式驱动关节伺服，1kHz周期下发角度指令
-- ✅ 分级故障保护、平滑收腿兜底，Tick驱动非阻塞状态机
+> 🏷 `ROS 2 Foxy` `XRCE‑DDS` `micro‑ROS` `UART+DMA` `环形缓冲`
+> ℹ 同题两解，实时边界划在不同位置：`hyperdog_rtos_control`（板上闭环）与 `nybble_micro_ros`（上位机规划）
+- 🐕 **HyperDog 单机主控** —— [./01_quadruped_robotics/hyperdog_rtos_control](./01_quadruped_robotics/hyperdog_rtos_control)
+  - ✅ 对角Trot小跑步态调度，五次多项式足端轨迹，落地冲击小
+  - ✅ ICM20602 IMU姿态解算，动态滤波抑制电机振动噪声
+  - ✅ CAN分布式驱动关节伺服，1kHz周期下发角度指令
+  - ✅ 分级故障保护、平滑收腿兜底，Tick驱动非阻塞状态机
+- 🐈 **Nybble ROS 2 分层** —— [./01_quadruped_robotics/nybble_micro_ros](./01_quadruped_robotics/nybble_micro_ros) 🚧 仅方案设计
+  - ✅ 规划层搬至 Linux：IK / Trot 轨迹 / 姿态补偿跑在 ROS 2 节点，12 路角度经 XRCE-DDS 下发
+  - ✅ DMA 批量接收 + 环形缓冲 + FreeRTOS 队列三段式消抖；TIM1/TIM8 原生 PWM 取代 PCA9685
+  - ⬜ 实机、固件与上位机节点均未开始，文档内指标为设计目标值
 
 2. [北斗/GNSS 定位飞控系统 | 实时控制与空间定位](./02_gnss-flight-controller) 🔥
 > 🏷 `STM32H723/F405` `FreeRTOS` `C/C++` `Qt5` `IMU/GNSS多传感器融合` `Dshot-600` `ELRS(CRSF)` `MSP OSD` `ESP8285 Wi-Fi`

@@ -27,7 +27,7 @@
 |---|---|
 | 芯片原厂 FAE / 固件 / BSP 驱动 | ⭐[电源时序器（量产）](./internship/GAOXINXING/internship_project_01-power-sequencer) → ⭐[冷热双循环温控](./personal_project/07_stm32‑tec‑temperature‑ctrl) → [储能 BMS 与充电桩](./personal_project/06_bms‑and‑charger) |
 | 工业控制 / 汽车电子 / 嵌入式 Linux | ⭐[工业边缘网关](./personal_project/05_industrial‑edge‑gateway) → [BMS 与充电桩](./personal_project/06_bms‑and‑charger) → [调音台-反馈抑制器](./internship/GAOXINXING/internship_project_02-digital-audio-mixer) |
-| 机器人 / 飞控 / 运动控制 | ⭐[HyperDog 四足机器狗](./personal_project/01_hyperdog-quadruped) → ⭐[北斗 GNSS 飞控](./personal_project/02_gnss-flight-controller) → [FOC 无刷电机](./personal_project/03_foc‑bldc‑motor) → [双轴运动控制](./personal_project/04_dual‑axis‑motion‑control) |
+| 机器人 / 飞控 / 运动控制 | ⭐[四足双平台（HyperDog / Nybble）](./personal_project/01_quadruped_robotics) → ⭐[北斗 GNSS 飞控](./personal_project/02_gnss-flight-controller) → [FOC 无刷电机](./personal_project/03_foc‑bldc‑motor) → [双轴运动控制](./personal_project/04_dual‑axis‑motion‑control) |
 | 音视频终端 / 安防 / AIoT | ⭐[ESP32-S3 智能终端](./personal_project/08_esp32‑smart‑terminals) → [USB 声卡](./internship/GAOXINXING/internship_project_03-usb-audio-interface) → [物联网综合实践](./personal_project/09_iot‑basic‑projects) |
 | 医疗器械 / 仪器仪表 / 传感器 | [冷热双循环温控](./personal_project/07_stm32‑tec‑temperature‑ctrl) → [心电采集监测](./personal_project/09_iot‑basic‑projects) |
 
@@ -64,12 +64,19 @@
 
 ## 💎 个人完整实战系统（9 套）
 
-### 🐕 01 · [HyperDog 四足机器狗主控固件](./personal_project/01_hyperdog-quadruped)　👑 代表作
-`Cortex-M` `FreeRTOS` `IMU(ICM20602)` `CAN` `Trot 步态` `五次多项式轨迹` `分级故障安全`
-- 对角 Trot 小跑步态调度，五次多项式足端轨迹规划，落地冲击小、站立↔Trot 平滑切换。
-- ICM20602 姿态解算 + 动态滤波，抑制行走电机振动带来的姿态噪声。
-- CAN 一主多从分布式关节架构：主控以 **1 kHz** 周期下发 12 自由度关节目标角度，200 Hz 步态调度主循环。
-- 分级故障保护与平滑收腿兜底，配套 6 篇专题文档（架构 / 协议 / 融合 / 步态 / 安全 / 标定）。
+### 🐕🐈 01 · [赛博猫狗：四足双平台（MCU 单机 + ROS 2 分层）](./personal_project/01_quadruped_robotics)　👑 代表作
+
+同一个母题做两遍 —— 用来说明**实时边界到底该划在哪一层**。
+
+**🐕 [HyperDog · MCU 单机主控](./personal_project/01_quadruped_robotics/hyperdog_rtos_control)**　`Cortex-M` `FreeRTOS` `IMU(ICM20602)` `CAN` `Trot 步态` `五次多项式`
+- 对角 Trot 步态调度 + 五次多项式足端轨迹，起止点速度、加速度均为 0，落地冲击小。
+- CAN 一主多从：主控 **1 kHz** 下发 12 自由度关节目标角，200 Hz 步态主循环，关节侧各自下沉 FOC。
+- 自适应互补滤波（冲击检测动态调权）+ 四级故障保护与平滑收腿，配套 6 篇专题文档。
+
+**🐈 [Nybble · ROS 2 + micro-ROS 分层](./personal_project/01_quadruped_robotics/nybble_micro_ros)**　`ROS 2 Foxy` `XRCE-DDS` `UART+DMA` `FreeRTOS` 🚧
+- 规划层搬到 Linux（IK / 步态 / 姿态补偿），MCU 只做实时执行，12 路角度以 Topic 周期下发。
+- DMA + 环形缓冲 + 队列三段式消抖；TIM1/TIM8 原生 PWM 取代 PCA9685 扩展板。
+- 当前**仅架构设计**，无实机与代码 —— 与左边那套同题不同解，对照看取舍更清楚。
 
 ### ✈️ 02 · [北斗 / GNSS 定位飞控系统](./personal_project/02_gnss-flight-controller)
 `STM32H723/F405` `FreeRTOS` `IMU/GNSS 融合` `串级 PID` `Dshot-600` `ELRS(CRSF)` `MSP OSD` `ESP8285` `Qt5`
@@ -184,7 +191,9 @@ CYY-portfolio/
 │   └── ANOTECH/                                      # 产品结构设计实习（仅文档报告）
 └── personal_project/                                 # 9 套实战系统 + 1 项在研预研
     ├── 00_embodied_ai_platform                       # 🚧 具身智能边缘计算平台（预研方案）
-    ├── 01_hyperdog-quadruped                         # 🐕 四足机器狗主控固件
+    ├── 01_quadruped_robotics                         # 🐕🐈 四足双平台（MCU 主控 + ROS 2）
+    │   ├── hyperdog_rtos_control                     # 单机 MCU + CAN（设计文档）
+    │   └── nybble_micro_ros                          # ROS 2 + micro-ROS（方案设计）
     ├── 02_gnss-flight-controller                     # ✈️ 北斗/GNSS 定位飞控
     ├── 03_foc-bldc-motor                             # ⚙️ 无刷电机 FOC 控制
     ├── 04_dual-axis-motion-control                   # 🎯 双轴运动控制（直流+步进）
