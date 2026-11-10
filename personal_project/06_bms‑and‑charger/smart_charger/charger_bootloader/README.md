@@ -56,3 +56,17 @@ EX2 http://www.armsoc.cn/zxx/doc/charge/lib/rt_studio.html
 2. https://www.runoob.com/cprogramming/c-tutorial.html
     - 函数指针与回调：https://www.runoob.com/cprogramming/c-fun-pointer-callback.html
     - 命令行参数：https://www.runoob.com/cprogramming/c-command-line-arguments.html
+
+---
+
+## 🏷 标识说明
+
+**本项目标识：🔴 进阶 / 量产级** —— 自研 IAP 引导程序：双分区、CRC 校验、断电回滚防变砖。
+
+**交付形态：完整工程** —— 本目录含自研源码与文档；第三方驱动库 / 厂商 SDK 属依赖，不计入自研部分。
+
+| 标识 | 含义 |
+|---|---|
+| 🔴 | 进阶 / 量产级：实时性、故障安全、复杂算法落地 |
+
+> 表格中只解释本文用到的标识；等级体系（👑 代表作 / 🔴 进阶 / 🟡 中等 / 🟢 基础 / 🚧 在研）与全部项目索引见 [作品集首页](../../../../README.md)。
