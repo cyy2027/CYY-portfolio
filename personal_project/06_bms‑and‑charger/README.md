@@ -53,10 +53,30 @@ Flash划分Bootloader区、备份固件区、APP运行区；新固件写入备�
 - BMS实现5串锂电池完整采集、保护、SOC估算，CAN远程状态上报，具备故障安全保护能力。
 - 充电桩实现IAP断电回滚升级机制，RFID扣费、蓝牙参数配置、强电继电器控制完整业务原型。
 
-## 附件
-- 系统架构框图：arch.png
-- BMS采集波形截图：bms_wave.png
-- 实物照片：hardware.jpg
+## 🎬 演示与实物
+
+| 内容 | 文件 |
+|---|---|
+| 实物照片 | [hardware_demo.png](./smart_charger/charger_app/doc/images/hardware_demo.png) |
+| 系统架构框图 | [system_arch.png](./smart_charger/charger_app/doc/images/system_arch.png) |
+| 原理图 / PCB | [schematic.png](./smart_charger/charger_app/doc/images/schematic.png) · [pcb.png](./smart_charger/charger_app/doc/images/pcb.png) |
+| 软件流程图 | [流程 1](./smart_charger/charger_app/doc/images/software_flow1.png) · [流程 2](./smart_charger/charger_app/doc/images/software_flow2.png) · [流程 3](./smart_charger/charger_app/doc/images/software_flow3.png) |
+| 主控 / 模块引脚 | [mcu_pin.png](./smart_charger/charger_app/doc/images/mcu_pin.png) · [rc522_pin.png](./smart_charger/charger_app/doc/images/rc522_pin.png) · [charge_module_pin.png](./smart_charger/charger_app/doc/images/charge_module_pin.png) |
+| 硬件工程（Altium） | [stm32‑smart‑charger.PrjPCB](./smart_charger/charger_app/doc/hardware/) |
+| 设计说明书 | [STM32 RC522 RFID 自助充电桩控制器设计书](./smart_charger/charger_app/doc/) |
+| 器件手册 | [SWM320 数据手册](./smart_charger/charger_bootloader/doc/SWM320_ds.pdf) · [Air780 AT 手册](./smart_charger/charger_bootloader/doc/Air780%20AT.pdf) |
+
+## 🧱 源码与第三方依赖
+
+本仓库**只保留自研代码、原理图与文档**，不重复上传厂商 SDK 与第三方库。编译前请按下表补齐依赖：
+
+| 依赖 | 用途 | 获取方式 |
+|---|---|---|
+| Synwit SWM320 SDK（StdPeriph 驱动 + FreeRTOS 移植） | `charger_bootloader` 编译；仓库内保留 `SWM320_StdPeriph_Driver` 与两个在用工程 | 华芯微特官网 |
+| STM32CubeF1 HAL / CMSIS | `charger_app` 编译 | 用 STM32CubeMX 打开 `smart_charger/charger_app/keil_project/Project_C8.ioc` 重新生成 `Drivers/` |
+| FlashDB | 参数掉电存储 | <https://github.com/armink/FlashDB> |
+
+> 已移除的编译产物（`out/`、`Objects/`、`Listings/`、`*.uvguix.*`、`JLinkLog.txt`）由本地编译重新生成，`jlink` 与 Keil 版本相关文件不应入库。
 
 ## 📌返回导航
 

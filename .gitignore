@@ -21,6 +21,17 @@ Release/
 keil_project/MDK-ARM/Objects/
 keil_project/MDK-ARM/Listings/
 
+# ========= 通用编译输出（Keil / Synwit IDE / CubeMX） =========
+out/
+Objects/
+Listings/
+*.scvd
+*.uvopt
+*.dep
+*.iex
+*.hex
+*.s19
+
 # ========== Arduino / ESP32 编译临时文件 ==========
 *.eeprom
 *.sym
