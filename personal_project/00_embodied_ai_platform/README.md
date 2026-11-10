@@ -1,6 +1,9 @@
 # 具身智能边缘计算平台（预研方案）
 
-> 🚧 **状态：方案设计阶段** ｜ 0 行代码 ｜ 无硬件 ｜ 无实测数据
+> 🚧 **状态：方案设计阶段** ｜ 0 行代码 ｜ 硬件未采购 ｜ 无实测数据
+>
+> 🎯 **目标原型**：Radxa Rock 5B（RK3588，6 TOPS NPU）作大脑 + [Unitree Qmini](https://github.com/unitreerobotics/Qmini) 双足作本体，
+> 策略训练复用 [RoboTamer4Qmini](https://github.com/vsislab/RoboTamer4Qmini)（Isaac Gym + PPO）。两者均为开源项目，路线可复现。
 >
 > 本文是**技术方案与验证路线**，不是已交付项目。文中所有性能数字均为 **目标值（Target）**，
 > 未经实测；凡未验证的判断都标注了「待验证」。把它公开的目的是记录问题拆解思路，而不是展示成果。
@@ -76,7 +79,7 @@ Linux SoC 上——那是一套**非实时**的系统。于是问题变成：
 | 实时域组织方式 | ① 单 Linux + PREEMPT_RT ② 双域（Linux + MCU） ③ Linux + EtherCAT 从站 | **②** | 只有 ② 能让安全逻辑独立于 Linux 存活；①的抖动无上界，③成本与复杂度对单机预研过重 |
 | 异构链路 | CAN FD / EtherCAT / SPI+共享内存 | **CAN FD（待验证）** | 复用 01 项目已跑通的 CAN 主从架构与故障安全经验；EtherCAT 留作 P2 若 p99 不达标的后手 |
 | 算力平台 | RK3588 / Jetson Orin Nano | **RK3588** | 手头生态与成本更可控，6 TOPS INT8 对 MLP/小 CNN 策略够用；Orin 的 CUDA 生态优势在本阶段用不上 |
-| 双足 vs 四足验证平台 | Qmini 双足 / 自建四足（复用 01） | **先用四足** | 四足侧已有 CAN 主控与步态积累，可控变量更少；双足作为 P4 之后的迁移目标 |
+| 双足 vs 四足验证平台 | Qmini 双足 / 自建四足（复用 01） | **Qmini 双足** | 目标形态就是双足；Qmini 开源了 STEP/BOM/URDF，且有现成的训练与部署链路可复用，起点比自建高；四足作为"链路不通"时的退路 |
 
 ## 六、与已有项目的关系（为什么这不是空想）
 

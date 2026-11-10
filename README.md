@@ -2,7 +2,7 @@
 
 **2027 届 ｜ 求职方向：嵌入式软件 / 固件开发（MCU 固件 · RTOS · 嵌入式 Linux）**
 
-> 2 段实习（含 1 个量产交付项目）· 9 套完整实战系统 · 1 项在研预研 · 21 篇专题技术文档
+> 2 段实习（含 1 个量产交付项目）· 9 套完整实战系统 · 1 项在研预研 · 20 篇专题技术文档
 > 覆盖：底层固件与 BSP 驱动 · 工业控制与边缘计算 · 机器人 / 飞控 · 音视频终端 · 医疗仪器
 
 [在线版作品集（飞书，排版更精美）](https://p3-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/pc/super_tool/3b09bc56cfa24c99ad621f10bb514f7e.html?lk3s=8e244e95&rcl=20261106230041082128A8B8BA412E1300&rrcfp=f512b60b&x-expires=1795273296&x-signature=dPK0icz23Ui18jg5jo2VeMnGbRE%3D&use_xbridge3=true&loader_name=forest&need_sec_link=1&sec_link_scene=im&theme=dark)
@@ -71,7 +71,7 @@
 **[HyperDog · MCU 单机主控](./personal_project/01_quadruped_robotics/hyperdog_rtos_control)**　`Cortex-M` `FreeRTOS` `IMU(ICM20602)` `CAN` `Trot 步态` `五次多项式`
 - 对角 Trot 步态调度 + 五次多项式足端轨迹，起止点速度、加速度均为 0，落地冲击小。
 - CAN 一主多从：主控 **1 kHz** 下发 12 自由度关节目标角，200 Hz 步态主循环，关节侧各自下沉 FOC。
-- 自适应互补滤波（冲击检测动态调权）+ 四级故障保护与平滑收腿，配套 6 篇专题文档。
+- 自适应互补滤波（冲击检测动态调权）+ 四级故障保护与平滑收腿；架构 / 协议 / 融合 / 步态 / 安全 / 标定六个部分见本目录 README。
 
 **[Nybble · ROS 2 + micro-ROS 分层](./personal_project/01_quadruped_robotics/nybble_micro_ros)**　`ROS 2 Foxy` `XRCE-DDS` `UART+DMA` `FreeRTOS`　🚧 在研
 - 规划层搬到 Linux（IK / 步态 / 姿态补偿），MCU 只做实时执行，12 路角度以 Topic 周期下发。
@@ -142,7 +142,7 @@
 
 ---
 
-## 📚 嵌入式专题技术文档（21 篇 + 4 篇工具笔记）
+## 📚 嵌入式专题技术文档（20 篇 + 4 篇工具笔记）
 
 *工程实践总结：原理说明 + 伪代码 + 实测踩坑记录。完整目录见 [docs/README.md](./docs/README.md)。*
 
@@ -169,9 +169,11 @@
 - 🟡 [《ESP-IDF Ringbuf 环形缓冲区实战》](./docs/esp32-ringbuf-practice.md)
 - 🔴 [《LVGL 嵌入式 GUI 实战：内存管理、帧率优化、泄漏排查》](./docs/lvgl-gui-practice.md)
 
-**E. HyperDog 足式机器人专题（6 篇）**
-- 🔴 [整机固件架构设计](./docs/hyperdog-arch.md) ｜ 🔴 [CAN 分布式关节协议](./docs/hyperdog-can-protocol.md) ｜ 🔴 [IMU 姿态融合与振动抑制](./docs/hyperdog-imu-fusion.md)
-- 🔴 [Trot 步态调度与足端轨迹](./docs/hyperdog-gait-scheduler.md) ｜ 🔴 [整机故障安全与分级保护](./docs/hyperdog-safety.md) ｜ 🟡 [整机标定与分步调参](./docs/hyperdog-calibration.md)
+**E. 具身智能专题（5 篇）** —— Rock 5B + Qmini 双足原型路线（基于开源项目规划，硬件未采购）
+
+- 🔴 [大脑—小脑异构架构：50 Hz 决策与 20 kHz 电流环之间](./docs/embodied-brain-body-arch.md) ｜ 🔴 [RK3588 NPU 部署链路：从 ONNX 到策略上板](./docs/rk3588-npu-deploy.md)
+- 🔴 [Sim-to-Real：从 Isaac Gym 训练到 Qmini 真机落地](./docs/sim-to-real-legged.md) ｜ 🟡 [ROS 2 + micro-ROS 分层控制](./docs/ros2-micro-ros-layered.md)
+- 🟡 [Qmini + Rock 5B 上板路线：从开箱到策略闭环](./docs/qmini-rock5b-bringup.md)
 
 **P. 拓展笔记**：[docs/tech-notes](./docs/tech-notes/README.md) —— 嵌入式 C 编码陷阱、STM32 外设踩坑、FreeRTOS 零散案例、J-Link / 逻辑分析仪调试技巧。
 
@@ -182,7 +184,7 @@
 ```text
 CYY-portfolio/
 ├── README.md                                         # 作品集首页（本文件）
-├── docs/                                             # 21 篇专题技术文档
+├── docs/                                             # 20 篇专题技术文档
 │   └── tech-notes/                                   # 嵌入式 C / 驱动 / RTOS 碎片笔记
 ├── internship/                                       # 实习项目（已脱敏）
 │   ├── GAOXINXING/
