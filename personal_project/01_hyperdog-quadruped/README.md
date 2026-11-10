@@ -1,6 +1,9 @@
 # HyperDog 四足机器人 Trot 步态主控固件
 > 标签：👑 嵌入式标杆项目 | STM32F4+FreeRTOS | CAN分布式四足主控 | 分层运动控制
 
+> 📌 **公开范围**：本目录公开的是**设计文档**（本文件 + `design.md`），6 篇专题文档位于仓库根 [`docs/`](../../docs/)。
+> 固件源码与原理图未纳入本仓库 —— 下面的目录结构中标注「未纳入」的部分，clone 后并不存在，特此说明以免误解。
+
 ## 一、项目简介
 本固件为12自由度四足机器人**对角小跑(Trot步态)**主控程序，采用**一主多从分布式CAN总线架构**：主控MCU负责整机姿态解算、步态相位调度、故障安全管理；4个关节伺服独立下沉FOC闭环控制，实现算力分层解耦。
 
@@ -18,32 +21,24 @@
 ### 技术栈
 STM32F4 | FreeRTOS | CAN2.0B | ICM20602 | 自适应互补滤波 | 五次多项式轨迹 | 逆运动学 | 非阻塞状态机
 
-## 三、目录结构（严格遵循统一规范）
-```
+## 三、目录结构（设计规划；标注「未纳入」者不在本仓库）
+
+```text
 hyperdog-main-firmware/
 ├── README.md                 # 项目总览、编译环境、烧录步骤
 ├── design.md                 # 完整软硬件设计文档
-├── docs/
-│   ├── arch/                 # 系统架构、任务时序图
-│   ├── protocol/             # CAN通信协议文档
-│   ├── algorithm/            # IMU融合、步态轨迹理论文档
-│   ├── safety/               # 故障保护策略
-│   ├── calibration/          # 零位标定手册
-│   └── debug_log/            # 调试记录、问题复盘、测试波形
-├── hardware/
-│   ├── schematic.pdf
-│   ├── PCB工程文件
-│   └── BOM元器件清单
-├── firmware/                 # STM32核心源码
-│   ├── core/                 # FreeRTOS任务、状态机
-│   ├── driver/               # CAN、I2C、TIM外设驱动
-│   ├── algorithm/            # IK、轨迹、姿态解算代码
-│   └── safety/               # 故障检测与保护逻辑
-└── tools/                    # Python调试脚本（仅辅助调试，不参与实时控制）
-    ├── gait_plot.py          # 五次多项式轨迹离线绘图验证
-    ├── can_log_parse.py      # CAN总线日志解析与时延统计
-    ├── imu_data_analysis.py  # IMU原始数据滤波效果分析
-    └── joint_calibrate.py    # 关节零位标定上位机工具
+├── docs/                     # 未纳入本仓库：6 篇专题文档已移至仓库根 docs/
+├── hardware/                 # 未纳入：原理图 / PCB / BOM
+├── firmware/                 # 未纳入：STM32 核心源码
+│   ├── core/                 #    FreeRTOS任务、状态机
+│   ├── driver/               #    CAN、I2C、TIM外设驱动
+│   ├── algorithm/            #    IK、轨迹、姿态解算代码
+│   └── safety/               #    故障检测与保护逻辑
+└── tools/                    # 未纳入：Python 离线调试脚本
+    ├── gait_plot.py          #    五次多项式轨迹离线绘图验证
+    ├── can_log_parse.py      #    CAN总线日志解析与时延统计
+    ├── imu_data_analysis.py  #    IMU原始数据滤波效果分析
+    └── joint_calibrate.py    #    关节零位标定上位机工具
 ```
 
 ## 四、模块文档清单（docs/）
@@ -118,3 +113,9 @@ hyperdog-main-firmware/
 2. 增加ZMP零力矩点稳定判据，实现不平坦地形自适应行走；
 3. 增加腿部力传感器，实现落地柔顺控制；
 4. 移植到STM32H7，提升运算能力，拓展小跑、跳跃动态步态。
+
+## 十一、参考实现（非本项目产出）
+
+- **[NDHANA94/hyperdog_ros2](https://github.com/NDHANA94/hyperdog_ros2)** —— ROS 2 + Micro-ROS 的四足分层控制完整开源实现（IEEE SMC-2022 论文配套）。
+  我把它 fork 存档作为**架构对照参考**：它走的是「Linux 侧 ROS 2 规划 + MCU 侧 Micro-ROS 节点」的路线，与本项目「MCU 单机主控 + CAN 一主多从」是两种不同取舍。
+  说明：该 fork **无任何自有提交**，本条仅作资料索引，不计入个人项目。

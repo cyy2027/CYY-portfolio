@@ -2,12 +2,12 @@
 
 **2027 届 ｜ 求职方向：嵌入式软件 / 固件开发（MCU 固件 · RTOS · 嵌入式 Linux）**
 
-> 2 段实习（含 1 个量产交付项目）· 9 套完整实战系统 · 20 篇专题技术文档
+> 2 段实习（含 1 个量产交付项目）· 9 套完整实战系统 · 1 项在研预研 · 20 篇专题技术文档
 > 覆盖：底层固件与 BSP 驱动 · 工业控制与边缘计算 · 机器人 / 飞控 · 音视频终端 · 医疗仪器
 
 📄 [在线版作品集（飞书，排版更精美）](https://p3-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/pc/super_tool/3b09bc56cfa24c99ad621f10bb514f7e.html?lk3s=8e244e95&rcl=20261106230041082128A8B8BA412E1300&rrcfp=f512b60b&x-expires=1795273296&x-signature=dPK0icz23Ui18jg5jo2VeMnGbRE%3D&use_xbridge3=true&loader_name=forest&need_sec_link=1&sec_link_scene=im&theme=dark)
 
-> 💡 **阅读方式**：所有项目统一结构 —— `README.md`（简介与亮点）、`design.md`（软硬件详细设计）、`docs/`（实物图、调试记录、复盘）、`hardware/`（原理图 / PCB / BOM）、`firmware/`（源码）。建议 clone 到本地用 VS Code + Markdown 预览阅读。
+> 💡 **阅读方式**：项目统一按 `README.md`（简介与亮点）、`design.md`（软硬件详细设计）、`docs/`（专题文档 / 调试记录 / 复盘）组织。**源码与原理图按各项目实际情况提供**，未纳入仓库的会在对应 README 首屏标注，不做含糊承诺。建议 clone 到本地用 VS Code + Markdown 预览阅读。
 
 ---
 
@@ -119,6 +119,22 @@
 
 ---
 
+## 🚧 在研方向（预研阶段 · 无交付物）
+
+> 下面这些是**已拆解清楚、但尚未开工**的技术路线。列出来是因为问题本身有工程价值，不是为了充数：
+> 所有指标都是目标值，凡是没验证的都写明了「待验证」。
+
+### 🤖 00 · [具身智能边缘计算平台](./personal_project/00_embodied_ai_platform)　🚧 方案设计阶段
+`RK3588 (Linux + 6 TOPS NPU)` `双足 / 四足平台` `大脑—小脑异构` `RL 端侧推理` `Sim-to-Real`
+
+- **要回答的问题**：Linux 侧 50 Hz 策略推理与 MCU 侧 20 kHz 电流环相差三个数量级，如何构造一条延迟可界定的通路，让上层调度抖动不传导到关节。
+- **三条硬约束**：安全边界必须在实时域内闭合（Linux 崩了机器人要能自己收腿）· 决策与电流环之间必须有插值限幅层 · 每一段延迟单独打点可测量。
+- **已完成**：分层架构、四个核心风险的拆解、四阶段验收指标、选型权衡与否决理由（[方案文档](./personal_project/00_embodied_ai_platform)）。
+- **未开始**：硬件采购、BSP 适配、任何一行控制代码 —— 这份文档的价值在于想清楚，而不是假装做完了。
+- **为什么值得立项**：小脑侧复用 01 的 CAN 主控与故障安全，执行侧复用 03 的 FOC，大脑侧复用 05 的 RK3568 与 Socket 经验，每一层都有已交付项目垫底，缺的是把它们接起来并对齐时间尺度这一环。
+
+---
+
 ## 📚 嵌入式专题技术文档（20 篇 + 4 篇工具笔记）
 
 *工程实践总结：原理说明 + 伪代码 + 实测踩坑记录。完整目录见 [docs/README.md](./docs/README.md)。*
@@ -166,7 +182,8 @@ CYY-portfolio/
 │   │   ├── internship_project_02-digital-audio-mixer # RISC-V 数字调音台
 │   │   └── internship_project_03-usb-audio-interface # 桌面 USB 声卡
 │   └── ANOTECH/                                      # 产品结构设计实习（仅文档报告）
-└── personal_project/                                 # 9 套个人实战系统
+└── personal_project/                                 # 9 套实战系统 + 1 项在研预研
+    ├── 00_embodied_ai_platform                       # 🚧 具身智能边缘计算平台（预研方案）
     ├── 01_hyperdog-quadruped                         # 🐕 四足机器狗主控固件
     ├── 02_gnss-flight-controller                     # ✈️ 北斗/GNSS 定位飞控
     ├── 03_foc-bldc-motor                             # ⚙️ 无刷电机 FOC 控制
@@ -185,6 +202,7 @@ CYY-portfolio/
 | 标识 | 含义 |
 |---|---|
 | 👑 | 代表作：完成度最高、软硬件全栈闭环、有实物展示，优先面试展示 |
+| 🚧 | 在研 / 预研：方案与验证路线已完成，尚无交付物与实测数据，指标为目标值 |
 | ⭐ | 该岗位方向建议优先阅读的项目 |
 | 🔴 | 进阶 / 量产级难点：实时性、故障安全、复杂算法落地 |
 | 🟡 | 中等模块：嵌入式高频技术点，校招常考 |
