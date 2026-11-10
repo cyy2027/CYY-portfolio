@@ -2,7 +2,7 @@
 
 **2027 届 ｜ 求职方向：嵌入式软件 / 固件开发（MCU 固件 · RTOS · 嵌入式 Linux）**
 
-> 2 段实习（含 1 个量产交付项目）· 9 套完整实战系统 · 1 项在研预研 · 20 篇专题技术文档
+> 2 段实习（含 1 个量产交付项目）· 9 套完整实战系统 · 1 项在研预研 · 21 篇专题技术文档
 > 覆盖：底层固件与 BSP 驱动 · 工业控制与边缘计算 · 机器人 / 飞控 · 音视频终端 · 医疗仪器
 
 [在线版作品集（飞书，排版更精美）](https://p3-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/pc/super_tool/3b09bc56cfa24c99ad621f10bb514f7e.html?lk3s=8e244e95&rcl=20261106230041082128A8B8BA412E1300&rrcfp=f512b60b&x-expires=1795273296&x-signature=dPK0icz23Ui18jg5jo2VeMnGbRE%3D&use_xbridge3=true&loader_name=forest&need_sec_link=1&sec_link_scene=im&theme=dark)
@@ -142,7 +142,7 @@
 
 ---
 
-## 📚 嵌入式专题技术文档（20 篇 + 4 篇工具笔记）
+## 📚 嵌入式专题技术文档（21 篇 + 4 篇工具笔记）
 
 *工程实践总结：原理说明 + 伪代码 + 实测踩坑记录。完整目录见 [docs/README.md](./docs/README.md)。*
 
@@ -154,6 +154,7 @@
 
 **B. 电机与控制**
 - 🔴 [《无电流采样下的 FOC 电压模式控制实践》](./docs/motor‑foc‑control.md)
+- 🔴 [《无感 FOC 转子位置观测器：滑模观测、PLL 提取与低速高频注入》](./docs/sensorless-foc-observer.md)
 - 🔴 [《PID 控制工程实战：温控/电机调参、超调抑制、前馈》](./docs/pid-engineering-tuning.md)
 
 **C. 通信协议与外设**
@@ -181,7 +182,7 @@
 ```text
 CYY-portfolio/
 ├── README.md                                         # 作品集首页（本文件）
-├── docs/                                             # 20 篇专题技术文档
+├── docs/                                             # 21 篇专题技术文档
 │   └── tech-notes/                                   # 嵌入式 C / 驱动 / RTOS 碎片笔记
 ├── internship/                                       # 实习项目（已脱敏）
 │   ├── GAOXINXING/
