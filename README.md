@@ -13,25 +13,12 @@
 
 ---
 
-## ⏱ 30 秒速览
+## 🎯 按岗位方向查找（完整版索引）
 
-| 项目 | 关键交付 |
-|---|---|
-| **① 电源时序器国产化替代**（实习 · 已量产） | 陌生国产 Cortex-M0 平台 **2 周**完成 Bring-up 并交付量产；非阻塞 FSM 八路时序控制 + IWDG 强电安全兜底，闭环 8 类软硬件耦合 Bug |
-| **② HyperDog 四足机器狗主控固件** | FreeRTOS 分布式主控架构，对角 Trot 步态 + 五次多项式足端轨迹，**1 kHz** 周期通过 CAN 下发 12 路关节指令 |
-| **③ 工业物联网边缘网关**（MCU + Linux） | RS485 / LoRa / CAN 多协议采集 → MQTT 端边云闭环；RK3568 上 TCP Socket + SQLite 本地缓存 + 断线重连 |
-
----
-
-## 🎯 按岗位方向查找（推荐阅读顺序）
-
-| 目标岗位方向 | 建议先看 |
-|---|---|
-| 芯片原厂 FAE / 固件 / BSP 驱动 | ⭐[电源时序器（量产）](./internship/GAOXINXING/internship_project_01-power-sequencer) → ⭐[冷热双循环温控](./personal_project/07_stm32‑tec‑temperature‑ctrl) → [储能 BMS 与充电桩](./personal_project/06_bms‑and‑charger) |
-| 工业控制 / 汽车电子 / 嵌入式 Linux | ⭐[工业边缘网关](./personal_project/05_industrial‑edge‑gateway) → [BMS 与充电桩](./personal_project/06_bms‑and‑charger) → [调音台-反馈抑制器](./internship/GAOXINXING/internship_project_02-digital-audio-mixer) |
-| 机器人 / 飞控 / 运动控制 | ⭐[四足双平台（HyperDog / Nybble）](./personal_project/01_quadruped_robotics) → ⭐[北斗 GNSS 飞控](./personal_project/02_gnss-flight-controller) → [FOC 无刷电机](./personal_project/03_foc‑bldc‑motor) → [双轴运动控制](./personal_project/04_dual‑axis‑motion‑control) |
-| 音视频终端 / 安防 / AIoT | ⭐[ESP32-S3 智能终端](./personal_project/08_esp32‑smart‑terminals) → [USB 声卡](./internship/GAOXINXING/internship_project_03-usb-audio-interface) → [物联网综合实践](./personal_project/09_iot‑basic‑projects) |
-| 医疗器械 / 仪器仪表 / 传感器 | [冷热双循环温控](./personal_project/07_stm32‑tec‑temperature‑ctrl) → [心电采集监测](./personal_project/09_iot‑basic‑projects) |
+> **[《作品集方向索引（完整版）》](./docs/career-path-index.md)** —— 按 **60+ 个岗位方向**组织的主线系统索引：
+> 嵌入式固件（通用 / Linux / IoT / 电机控制 / 工业 / 医疗 / 具身智能 / 家电 / 储能 / 车载…）·
+> 硬件研发 · 测试 / 可靠性 / 制造 · 结构 / 文档 / FAE 支持类，另含外企**英文简历**方向的选型。
+> 每个方向列出建议展示的主线系统与工程，简历投递时可按表引导面试官查阅。
 
 ---
 

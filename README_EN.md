@@ -13,25 +13,12 @@
 
 ---
 
-## ⏱ 30-Second Overview
+## 🎯 Find by Target Role (Full Index)
 
-| Project | Key deliverable |
-|---|---|
-| **① Power Sequencer — Domestic Chip Migration** (internship · in mass production) | Bring-up of an unfamiliar domestic Cortex-M0 platform and delivery to production in **2 weeks**; non-blocking FSM driving 8-channel power sequencing + IWDG watchdog as last-resort safety for the mains path; root-caused and closed 8 hardware/software-coupled bugs |
-| **② HyperDog Quadruped — Master Controller Firmware** | FreeRTOS distributed master-controller architecture; diagonal trot gait + quintic-polynomial foot trajectories; **1 kHz** CAN downlink dispatching 12 joint commands |
-| **③ Industrial IoT Edge Gateway** (MCU + Linux) | RS485 / LoRa / CAN multi-protocol acquisition → MQTT edge-to-cloud loop; TCP Socket + SQLite local caching + auto-reconnect on RK3568 |
-
----
-
-## 🎯 Find by Target Role (Recommended Reading Order)
-
-| Target role | Read first |
-|---|---|
-| Chip vendor FAE / Firmware / BSP driver | ⭐[Power Sequencer (mass production)](./internship/GAOXINXING/internship_project_01-power-sequencer) → ⭐[Dual-Loop TEC Temperature Control](./personal_project/07_stm32‑tec‑temperature‑ctrl) → [Storage BMS & Smart Charger](./personal_project/06_bms‑and‑charger) |
-| Industrial control / Automotive / Embedded Linux | ⭐[Industrial Edge Gateway](./personal_project/05_industrial‑edge‑gateway) → [BMS & Smart Charger](./personal_project/06_bms‑and‑charger) → [Digital Mixer — Feedback Suppressor](./internship/GAOXINXING/internship_project_02-digital-audio-mixer) |
-| Robotics / Flight control / Motion control | ⭐[Quadruped Dual Platform (HyperDog / Nybble)](./personal_project/01_quadruped_robotics) → ⭐[BeiDou/GNSS Flight Controller](./personal_project/02_gnss-flight-controller) → [FOC BLDC Motor](./personal_project/03_foc‑bldc‑motor) → [Dual-Axis Motion Control](./personal_project/04_dual‑axis‑motion‑control) |
-| Audio-video terminals / Security / AIoT | ⭐[ESP32-S3 Smart Terminals](./personal_project/08_esp32‑smart‑terminals) → [USB Sound Card](./internship/GAOXINXING/internship_project_03-usb-audio-interface) → [IoT Practice Collection](./personal_project/09_iot‑basic‑projects) |
-| Medical devices / Instruments / Sensors | [Dual-Loop TEC Temperature Control](./personal_project/07_stm32‑tec‑temperature‑ctrl) → [ECG Acquisition Monitor](./personal_project/09_iot‑basic‑projects) |
+> **[Career-path index — full version (Chinese)](./docs/career-path-index.md)** — a mainline-system index organized by **60+ target roles**:
+> embedded firmware (general / Linux / IoT / motor control / industrial / medical / embodied AI / home appliances / energy storage / automotive…),
+> hardware R&D, test & reliability, and structural / documentation / FAE roles, plus selections for **English-resume** applications to foreign companies.
+> Each role lists the recommended systems to present — use it to guide interviewers when submitting applications.
 
 ---
 
