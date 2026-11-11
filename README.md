@@ -2,6 +2,8 @@
 
 **2027 届 ｜ 求职方向：嵌入式软件 / 固件开发（MCU 固件 · RTOS · 嵌入式 Linux）**
 
+> 🌐 [English version](./README_EN.md)
+
 > 2 段实习（含 1 个量产交付项目）· 9 套完整实战系统 · 1 项在研预研 · 26 篇专题技术文档
 > 覆盖：底层固件与 BSP 驱动 · 工业控制与边缘计算 · 机器人 / 飞控 · 音视频终端 · 医疗仪器
 
@@ -184,6 +186,7 @@
 ```text
 CYY-portfolio/
 ├── README.md                                         # 作品集首页（本文件）
+├── README_EN.md                                      # 英文版首页
 ├── docs/                                             # 26 篇专题技术文档
 │   └── tech-notes/                                   # 嵌入式 C / 驱动 / RTOS 碎片笔记
 ├── internship/                                       # 实习项目（已脱敏）
