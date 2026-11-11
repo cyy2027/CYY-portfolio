@@ -21,7 +21,7 @@
 |---|---|---|---|
 | **A · 动态控制** | 飞控、具身/机器人、AGV、运动控制、FOC、变频家电 | 1 kHz CAN 关节调度、四级串级 PID、SVPWM（源码在库） | [→ A](./showcase/A_motion-control.md) |
 | **B · 音频** | 音频算法（反馈抑制）、音视频终端、安防 IPC | FBX 陷波 + 移频防啸叫、I2S 链路、UAC2.0 声卡 | [→ B](./showcase/B_audio.md) |
-| **C · 结构** | 结构设计 | ANOTECH 实习 + CNC 腔体 STEP（建模作品待上传） | [→ C](./showcase/C_mechanical.md) |
+| **C · 结构** | 结构设计 | 温控腔体自研（3D 设计 + 打印验证）、机器猫结构优化、ANOTECH 实习 | [→ C](./showcase/C_mechanical.md) |
 | **D · 硬件** | 电机驱动·功率、PCB Layout、消费电子、AE/FAE | TEC 整板原理图 + PCB 源文件、量产强电板 | [→ D](./showcase/D_hardware.md) |
 | **E · 数据报告** | BMS、充电桩、计量、可靠性 | ±0.25 ℃ 实测曲线、OCV+温度补偿 SOC、8 类 Bug 复盘 | [→ E](./showcase/E_data-report.md) |
 

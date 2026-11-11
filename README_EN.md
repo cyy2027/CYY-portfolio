@@ -21,7 +21,7 @@
 |---|---|---|---|
 | **A · Motion Control** | flight control, robotics, AGV, motion control, FOC | 1 kHz CAN joint scheduling, 4-stage cascaded PID, SVPWM (source in repo) | [→ A](./showcase/A_motion-control.md) |
 | **B · Audio** | audio algorithms (feedback suppression), AV terminals, security IPC | FBX notch + frequency shifting, I2S pipeline, UAC2.0 sound card | [→ B](./showcase/B_audio.md) |
-| **C · Mechanical** | structural design | ANOTECH internship + CNC chamber STEP (model works to be uploaded) | [→ C](./showcase/C_mechanical.md) |
+| **C · Mechanical** | structural design | Self-designed thermal chamber (3D design + print verification), robot structure optimization, ANOTECH internship | [→ C](./showcase/C_mechanical.md) |
 | **D · Hardware** | motor drivers / power, PCB layout, consumer electronics, AE/FAE | TEC board schematic + PCB source files, mass-production relay board | [→ D](./showcase/D_hardware.md) |
 | **E · Data & Reliability** | BMS, chargers, metering, reliability | ±0.25 ℃ measured curves, OCV + temp-compensated SOC, 8-case bug review | [→ E](./showcase/E_data-report.md) |
 
