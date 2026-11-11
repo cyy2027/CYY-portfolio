@@ -13,7 +13,21 @@
 
 ---
 
-## 🎯 Find by Target Role (Full Index)
+## 🎯 Five Portfolios (Pick One by Target Role)
+
+> Short on time? Pick the portfolio that matches the target role. Each is a single **curation page** (Chinese): it filters, links, and annotates evidence — the content itself stays in each project directory.
+
+| Portfolio | Target roles | Key evidence | Entry |
+|---|---|---|---|
+| **A · Motion Control** | flight control, robotics, AGV, motion control, FOC | 1 kHz CAN joint scheduling, 4-stage cascaded PID, SVPWM (source in repo) | [→ A](./showcase/A_motion-control.md) |
+| **B · Audio** | audio algorithms (feedback suppression), AV terminals, security IPC | FBX notch + frequency shifting, I2S pipeline, UAC2.0 sound card | [→ B](./showcase/B_audio.md) |
+| **C · Mechanical** | structural design | ANOTECH internship + CNC chamber STEP (model works to be uploaded) | [→ C](./showcase/C_mechanical.md) |
+| **D · Hardware** | motor drivers / power, PCB layout, consumer electronics, AE/FAE | TEC board schematic + PCB source files, mass-production relay board | [→ D](./showcase/D_hardware.md) |
+| **E · Data & Reliability** | BMS, chargers, metering, reliability | ±0.25 ℃ measured curves, OCV + temp-compensated SOC, 8-case bug review | [→ E](./showcase/E_data-report.md) |
+
+---
+
+## 🧭 Find by Target Role (Full Index, 60+ roles)
 
 > **[Career-path index — full version (Chinese)](./docs/career-path-index.md)** — a mainline-system index organized by **60+ target roles**:
 > embedded firmware (general / Linux / IoT / motor control / industrial / medical / embodied AI / home appliances / energy storage / automotive…),
@@ -174,6 +188,8 @@ One theme, two implementations — to answer **where the real-time boundary shou
 CYY-portfolio/
 ├── README.md                                         # Portfolio home (Chinese)
 ├── README_EN.md                                      # English version of this page
+├── showcase/                                         # Five portfolio curation pages (A motion / B audio / C mechanical / D hardware / E data)
+├── assets/                                           # Demo media (waveforms / audio / board photos / data, mostly TODO)
 ├── docs/                                             # 26 technical articles (Chinese)
 │   └── tech-notes/                                   # Embedded C / drivers / RTOS fragments
 ├── internship/                                       # Internship projects (sanitized)
