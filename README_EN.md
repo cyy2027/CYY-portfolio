@@ -7,7 +7,7 @@
 > 2 internships (incl. 1 project shipped to mass production) · 9 complete hands-on systems · 1 pre-research direction · 26 in-depth technical articles
 > Domains: low-level firmware & BSP drivers · industrial control & edge computing · robotics / flight control · audio-video terminals · medical instruments
 
-[Online portfolio (Feishu, nicer layout)](https://my.feishu.cn/docx/D5kzdRqFVoco87x0ESDcsfz8njd?from=from_copylink)
+[Online portfolio (Feishu, nicer layout)](https://p3-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/pc/super_tool/3b09bc56cfa24c99ad621f10bb514f7e.html?lk3s=8e244e95&rcl=20261106230041082128A8B8BA412E1300&rrcfp=f512b60b&x-expires=1795273296&x-signature=dPK0icz23Ui18jg5jo2VeMnGbRE%3D&use_xbridge3=true&loader_name=forest&need_sec_link=1&sec_link_scene=im&theme=dark)
 
 > 💡 **How to read**: every project follows the same structure — `README.md` (overview & highlights), `design.md` (detailed HW/SW design), `docs/` (deep dives / debug logs / retrospectives). Cloning locally and reading with VS Code + Markdown preview is recommended.
 
