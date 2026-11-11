@@ -2,7 +2,7 @@
 
 **2027 届 ｜ 求职方向：嵌入式软件 / 固件开发（MCU 固件 · RTOS · 嵌入式 Linux）**
 
-> 2 段实习（含 1 个量产交付项目）· 9 套完整实战系统 · 1 项在研预研 · 20 篇专题技术文档
+> 2 段实习（含 1 个量产交付项目）· 9 套完整实战系统 · 1 项在研预研 · 26 篇专题技术文档
 > 覆盖：底层固件与 BSP 驱动 · 工业控制与边缘计算 · 机器人 / 飞控 · 音视频终端 · 医疗仪器
 
 [在线版作品集（飞书，排版更精美）](https://my.feishu.cn/docx/D5kzdRqFVoco87x0ESDcsfz8njd?from=from_copylink)
@@ -142,7 +142,7 @@
 
 ---
 
-## 📚 嵌入式专题技术文档（20 篇 + 4 篇工具笔记）
+## 📚 嵌入式专题技术文档（26 篇 + 4 篇工具笔记）
 
 *工程实践总结：原理说明 + 伪代码 + 实测踩坑记录。完整目录见 [docs/README.md](./docs/README.md)。*
 
@@ -169,11 +169,11 @@
 - 🟡 [《ESP-IDF Ringbuf 环形缓冲区实战》](./docs/esp32-ringbuf-practice.md)
 - 🔴 [《LVGL 嵌入式 GUI 实战：内存管理、帧率优化、泄漏排查》](./docs/lvgl-gui-practice.md)
 
-**E. 具身智能专题（5 篇）** —— Rock 5B + Qmini 双足原型路线（基于开源项目规划，硬件未采购）
+**E. 具身智能专题（11 篇）** —— 00 平台（Rock 5B + Qmini，规划中）＋ 01 双平台（🐕 HyperDog 单机 / 🐈 Nybble 分层）
 
-- 🔴 [大脑—小脑异构架构：50 Hz 决策与 20 kHz 电流环之间](./docs/embodied-brain-body-arch.md) ｜ 🔴 [RK3588 NPU 部署链路：从 ONNX 到策略上板](./docs/rk3588-npu-deploy.md)
-- 🔴 [Sim-to-Real：从 Isaac Gym 训练到 Qmini 真机落地](./docs/sim-to-real-legged.md) ｜ 🟡 [ROS 2 + micro-ROS 分层控制](./docs/ros2-micro-ros-layered.md)
-- 🟡 [Qmini + Rock 5B 上板路线：从开箱到策略闭环](./docs/qmini-rock5b-bringup.md)
+- **E.1 异构平台与策略部署**（Rock 5B + Qmini · 00 在研）：🔴 [大脑—小脑异构架构](./docs/embodied-brain-body-arch.md) ｜ 🔴 [RK3588 NPU 部署链路](./docs/rk3588-npu-deploy.md) ｜ 🔴 [Sim-to-Real 训练与迁移](./docs/sim-to-real-legged.md) ｜ 🟡 [Qmini 上板路线](./docs/qmini-rock5b-bringup.md)
+- **E.2 四足整机实时控制**（HyperDog · 单机 MCU + CAN）：🔴 [整机固件架构](./docs/hyperdog-arch.md) ｜ 🔴 [CAN 关节协议](./docs/hyperdog-can-protocol.md) ｜ 🔴 [IMU 姿态融合与振动抑制](./docs/hyperdog-imu-fusion.md) ｜ 🔴 [Trot 步态调度](./docs/hyperdog-gait-scheduler.md) ｜ 🔴 [故障安全分级保护](./docs/hyperdog-safety.md) ｜ 🟡 [整机标定与分步调参](./docs/hyperdog-calibration.md)
+- **E.3 ROS 2 + micro-ROS 分层**（Nybble · 链路分层）：🟡 [把实时边界挪到链路上](./docs/ros2-micro-ros-layered.md)
 
 **P. 拓展笔记**：[docs/tech-notes](./docs/tech-notes/README.md) —— 嵌入式 C 编码陷阱、STM32 外设踩坑、FreeRTOS 零散案例、J-Link / 逻辑分析仪调试技巧。
 
@@ -184,7 +184,7 @@
 ```text
 CYY-portfolio/
 ├── README.md                                         # 作品集首页（本文件）
-├── docs/                                             # 20 篇专题技术文档
+├── docs/                                             # 26 篇专题技术文档
 │   └── tech-notes/                                   # 嵌入式 C / 驱动 / RTOS 碎片笔记
 ├── internship/                                       # 实习项目（已脱敏）
 │   ├── GAOXINXING/

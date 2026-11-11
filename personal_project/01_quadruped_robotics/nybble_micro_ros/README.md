@@ -54,6 +54,7 @@ Ubuntu + ROS 2 Foxy            micro-ROS Agent (XRCE-DDS)         STM32 + FreeRT
 
 ## 五、参考
 
+- 配套专题：[《ROS 2 + micro-ROS 分层控制：把实时边界挪到链路上》](../../../docs/ros2-micro-ros-layered.md)（具身智能专题 E.3）—— 本方案的通用工程展开：XRCE-DDS 取舍、三段式接收、QoS 选型、何时退回单机
 - **HyperDog**（[NDHANA94/hyperdog_ros2](https://github.com/NDHANA94/hyperdog_ros2)，IEEE SMC-2022）——
   ROS 2 + micro-ROS 四足开源实现，本方案的分层思想来自它。我只 fork 存档做架构对照，**无自有提交**。
 - micro-ROS / XRCE-DDS 官方文档：Agent–Client 部署模型与传输层配置。
